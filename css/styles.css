@@ -29,13 +29,13 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+.no-top-pading{
+  padding-top: 0;
+}
 a{
   text-decoration: none;
 }
 
-.list {
-  list-style: none;
-}
 .button-primary{
   font-size: 16px;
   background-color: var(--accent-color) ;
@@ -160,9 +160,38 @@ header nav .navbar_menu .page {
   text-transform: capitalize;
 }
 
+/* features section */
+.features{
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  display: flex;
+}
 
+.features li{
+  list-style: none;
+  width: 240px;
+}
 
+.features li .features_title{
+  height: 50px;
+  text-transform: uppercase;
+  color: var(--primary-black-color);
+}
 
+/* what we do */
+.what_do_we_do_section .container ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.what_do_we_do_section .container ul li{
+  list-style: none;
+  width: 360px;
+}
+
+/* our team section */
 
 /* Portfolio section  */
 .portfolio .list li button {
