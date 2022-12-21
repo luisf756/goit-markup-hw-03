@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 :root {
   --primary-black-color: #212121;
   --primary-text-color: #757575;
@@ -22,18 +17,18 @@
   --container-padding: calc((100% - 1200px) / 2);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-}
-.no-top-pading{
-  padding-top: 0;
-}
-a{
-  text-decoration: none;
 }
 
 .button-primary{
@@ -76,7 +71,7 @@ a{
 }
 
 .section{
-  padding: 94px;
+  padding: 94px 0;
 }
 .section > h2{
   color: var(--primary-black-color);
@@ -84,6 +79,13 @@ a{
   font-weight: 700px;
   padding: 30px 0;
   text-align: center;
+}
+
+.no-top-pading{
+  padding-top: 0;
+}
+a{
+  text-decoration: none;
 }
 
 header{
@@ -180,7 +182,7 @@ header nav .navbar_menu .page {
 }
 
 /* what we do */
-.what_do_we_do_section .container ul{
+.what_do_we_do_section .container ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -192,6 +194,26 @@ header nav .navbar_menu .page {
 }
 
 /* our team section */
+.our_team{
+  background-color: var(--background-gray);
+}
+
+.team_cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.card{
+  background-color: var(--primary-white-color);
+  text-align: center;
+}
+.card h3{
+  margin: 20px 0 10px 0;
+}
+.card p{
+  margin-bottom: 30px;
+}
 
 /* Portfolio section  */
 .portfolio .list li button {
