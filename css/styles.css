@@ -215,22 +215,71 @@ header nav .navbar_menu .page {
   margin-bottom: 30px;
 }
 
-/* Portfolio section  */
-.portfolio .list li button {
-  color: var(--primary-black-color);
-  background-color: var(--text-white-opacity);
+/* Portfolio page  */
+.portfolio .menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  list-style: none;
+}
 
+.portfolio .menu li button {
+  border: none;
+  outline: none;
+  color: var(--primary-black-color);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0.02em;
+  padding: 10px 30px;
+
   text-decoration: none;
   text-transform: capitalize;
 }
-.portfolio .list li button:hover,
-.portfolio .list li button.current{
+
+.portfolio .menu li button:hover,
+.portfolio .menu li button.current{
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+.list_cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.portfolio .cards{
+  margin-bottom: 20px; 
+  width: 360px;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+  display: flex;
+}
+.cards:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.portfolio .cards  a h2{
+  color: var(--primary-black-color);
+  padding: 15px;
+}
+
+.portfolio .cards a p{
+  color: var(--primary-text-color);
+  font-size: 16px;
+  padding: 15px;
+}
+
+.portfolio .cards>.space_of h2{
+  /* line-height:0.7; */
+  
+  padding: 13px;
 }
 
 /* footer section  */
