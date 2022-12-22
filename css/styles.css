@@ -260,6 +260,7 @@ header nav .navbar_menu .page {
   flex-wrap: wrap;
  
   display: flex;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.2);
 }
 .cards:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -284,18 +285,22 @@ header nav .navbar_menu .page {
 
 /* footer section  */
 footer {
+  padding: 94px var(--container-padding);
   background-color: var(--background-black);
 }
-
- address .contact {
+address ul {
+  list-style: none;
+}
+address .contact {
+  display: block;
   color: var(--text-white-opacity);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  padding: 5px 0;
 }
-
-.contact:hover{
+address .contact:hover {
   color: var(--primary-white-color);
 }
