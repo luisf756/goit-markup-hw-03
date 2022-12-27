@@ -260,7 +260,7 @@ header nav .navbar_menu .page {
   flex-wrap: wrap;
  
   display: flex;
-  box-shadow: 0 1px 0 0 rgba(0,0,0,0.2);
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 .cards:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
